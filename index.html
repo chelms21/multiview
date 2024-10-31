@@ -1,20 +1,27 @@
 <div id="div1">
-<embed src="https://sporthd.live/" style="height: 100%; width: 100%;">
+<embed id="embed1" src="https://sporthd.live/" style="height: 100%; width: 100%;">
 </div>
 <div id="div2">
-<embed src="https://sporthd.live/" style="height: 100%; width: 100%;">
+<embed id="embed2" src="https://sporthd.live/" style="height: 100%; width: 100%;">
 </div>
 <div id="div3">
-<embed src="https://sporthd.live/" style="height: 100%; width: 100%;">
+<embed id="embed3" src="https://sporthd.live/" style="height: 100%; width: 100%;">
 </div>
 <div id="div4">
-<embed src="https://sporthd.live/" style="height: 100%; width: 100%;">
+<embed id="embed4" src="https://sporthd.live/" style="height: 100%; width: 100%;">
 </div>
 <p>Frames:</p>
 <a href="#div1" id="b1">(1)</a>
 <a href="#div1" id="b2">(2)</a>
 <a href="#div1" id="b3">(3)</a>
-<a href="#div1" id="b4">(4)</a>
+<a href="#div1" id="b4">(4)</a><br>
+<p>Sites:</p>
+<a href="#div1" id="s1">SportHD</a>
+<a href="#div1" id="s2">SportHD + Fantasy</a>
+<a href="#div1" id="s3">1Stream</a>
+<a href="#div1" id="s4">1Stream + Fantasy</a>
+<a href="#div1" id="s5">720pstream</a>
+<a href="#div1" id="s6">720pstream + Fantasy</a>
 
 <style>
 html, body { height: 100%; padding: 0; margin: 0; }
@@ -30,6 +37,11 @@ var div1 = document.getElementById("div1")
 var div2 = document.getElementById("div2")
 var div3 = document.getElementById("div3")
 var div4 = document.getElementById("div4")
+
+var embed1 = document.getElementById("embed1")
+var embed2 = document.getElementById("embed2")
+var embed3 = document.getElementById("embed3")
+var embed4 = document.getElementById("embed4")
 
 document.getElementById("b1").onclick = function(){
   div1.style.height = '100%';
@@ -73,5 +85,12 @@ document.getElementById("b4").onclick = function(){
   div2.style.display = 'block';
   div3.style.display = 'block';
   div4.style.display = 'block';
+}
+
+function switch(site, site4) {
+    embed1.src = site;
+    embed2.src = site;
+    embed3.src = site;
+    embed4.src = site4;
 }
 </script>
